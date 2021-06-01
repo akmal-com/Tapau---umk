@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                "Frequently Bought Food",
+                "Choose Your Favourite Store",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
               ),
               GestureDetector(

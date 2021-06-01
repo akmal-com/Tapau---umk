@@ -19,8 +19,8 @@ Category(
 ),
 
 Category(
-  categoryName: "Beer",
-  imagePath: "assets/images/beer.jpeg",
+  categoryName: "Beverage",
+  imagePath: "assets/images/beverage.png",
   noOfItem: 64,
 ),
 ];

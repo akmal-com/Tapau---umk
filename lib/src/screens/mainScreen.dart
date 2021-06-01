@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zomato/src/pages/homePage.dart';
-import 'package:zomato/src/pages/mapsPage.dart';
 import 'package:zomato/src/pages/orderPage.dart';
 import 'package:zomato/src/pages/profilePage.dart';
+
 
 class MainScreen extends StatefulWidget
 {
@@ -17,7 +17,6 @@ class _MainScreenState extends State<MainScreen> {
   Widget currentPage;
   HomePage homePage;
   OrderPage orderPage;
-  MapsPage mapsPage;
   ProfilePage profilePage;
 
   @override
@@ -25,9 +24,8 @@ class _MainScreenState extends State<MainScreen> {
     super.initState();
     homePage=HomePage();
     orderPage=OrderPage();
-    mapsPage=MapsPage();
-    profilePage=ProfilePage();
-    pages=[homePage,orderPage,mapsPage,profilePage];
+    profilePage = ProfilePage();
+    pages=[homePage,orderPage,profilePage];
     currentPage=homePage;
 
   }
@@ -54,14 +52,10 @@ class _MainScreenState extends State<MainScreen> {
             icon:Icon(Icons.shopping_cart),
             title: Text("Order"),
             ),
-            BottomNavigationBarItem(
-            icon:Icon(Icons.zoom_out_map),
-            title: Text("Maps"),
-            ),
-            BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon:Icon(Icons.person),
             title: Text("Profile"),
-            ),
+          ),
 
         ],
       ),

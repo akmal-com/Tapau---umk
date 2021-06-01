@@ -56,11 +56,13 @@ flutter:
    - assets/images/burger.jpeg
    - assets/images/pizza.jpeg
    - assets/images/cofee.jpeg
-   - assets/images/beer.jpeg
-   - assets/images/junk.jpeg
+   - assets/images/beverage.png
+   - assets/images/nasi ayam.jpg
    - assets/images/verCofee.jpeg
-   - assets/images/food.jpeg
+   - assets/images/nasi lemak.jpg
+   - assets/images/nasi kak wok.jpg
    - assets/images/profile.jpeg
+   - assets/images/TAPAU.png
    
 
   #  - images/a_dot_ham.jpeg

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zomato/src/Login/login_screen.dart';
 import 'package:zomato/src/screens/mainScreen.dart';
 
 void main()
@@ -17,7 +18,7 @@ class MainApp extends StatelessWidget
       theme: ThemeData(
         primaryColor: Colors.blueAccent,
       ),
-      home: MainScreen(),
+      home: LoginScreen(),
     );
   }
   
