@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:zomato/src/widget/foodBought.dart';
-import 'package:zomato/src/widget/foodCategory.dart';
+//import 'package:zomato/src/widget/foodCategory.dart';
 import 'package:zomato/src/widget/homeTopWidget.dart';
-import 'package:zomato/src/widget/searchBar.dart';
+
 
 import '../data/foodData.dart';
 import '../models/foodModel.dart';
@@ -17,44 +17,52 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        padding: EdgeInsets.only(left: 20.0, top: 50.0, right: 20.0),
-        children: <Widget>[ 
-          HomeTopWidget(),
-          FoodCategory(),
-          SizedBox(
-            height: 15.0,
-          ),
-          SearchBar(),
-          SizedBox(
-            height: 15.0,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Text(
-                "Choose Your Favourite Store",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
-              ),
-              GestureDetector(
-                onTap: () {},
-                child: Text(
-                  "View All",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18.0,
-                      color: Colors.orangeAccent),
-                ),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 20.0,
-          ),
-          Column(
-            children: _foods.map(buildFoodBought).toList(),
+      backgroundColor: Colors.orange,
+      body: Container(decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Colors.orangeAccent, Colors.deepOrangeAccent]
           )
-        ],
+      ),
+        child: ListView(
+          padding: EdgeInsets.only(left: 20.0, top: 50.0, right: 20.0),
+          children: <Widget>[
+            HomeTopWidget(),
+           // FoodCategory(),
+            SizedBox(
+              height: 15.0,
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  "Choose Your Favourite Store",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+                ),
+                //GestureDetector(
+                 // onTap: () {},
+                 // child: Text(
+                   // "View All",
+                   // style: TextStyle(
+                    //    fontWeight: FontWeight.bold,
+                     //   fontSize: 18.0,
+                      //  color: Colors.orangeAccent),
+                  //),
+               // ),
+              ],
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Column(
+              children: _foods.map(buildFoodBought).toList(),
+            )
+          ],
+        ),
       ),
     );
   }

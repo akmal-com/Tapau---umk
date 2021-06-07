@@ -19,11 +19,11 @@ class HomeTopWidget extends StatelessWidget
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      "What Would ",
+                      "Which Store Would ",
                       style: textstyle,
                     ),
                     Text(
-                      "you like to eat ?",
+                      "You Like To Order ?",
                       style: textstyle,
                       
                       ),

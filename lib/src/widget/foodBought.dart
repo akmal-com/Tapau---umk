@@ -63,21 +63,20 @@ class _BoughtFoodState extends State<BoughtFood> {
                         color: Colors.white,
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,
-
                         ),
                     ),
                     Row(
                       children: <Widget>[
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        SizedBox(width: 20.0,),
-                        Text(
-                          "(${widget.ratings} Review )",
-                          style: TextStyle(color:Colors.grey),
-                        ),
+                        //Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
+                        //Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
+                        //Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
+                        //Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
+                        //Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
+                        //SizedBox(width: 20.0,),
+                        //Text(
+                        //  "(${widget.ratings} Review )",
+                        //  style: TextStyle(color:Colors.grey),
+                       // ),
 
                       ],
                     ),

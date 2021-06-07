@@ -11,13 +11,14 @@ class _OrderPageState extends State<OrderPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         title: Text(
           "Ordered Items List",
           style: TextStyle(color: Colors.black, fontSize: 23.0),
         ),
         backgroundColor: Colors.white,
-        elevation: 0.0,
+        elevation: 10.0,
         centerTitle: true,
       ),
       body: ListView(
@@ -46,7 +47,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Card Total",
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -68,7 +69,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Discount",
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -90,7 +91,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Tax",
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -113,7 +114,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Sub Total",
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -148,7 +149,7 @@ class _OrderPageState extends State<OrderPage> {
               ),
               child: Center(
                 child: Text(
-                  "Procede to CheckOut",
+                  "Proceed to CheckOut",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18.0,
